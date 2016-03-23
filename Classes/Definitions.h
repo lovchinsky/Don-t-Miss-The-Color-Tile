@@ -1,0 +1,67 @@
+#ifndef DEFINITIONS_H
+#define DEFINITIONS_H
+
+#define LEADERBOARD_CLASSIC "KEY"
+#define LEADERBOARD_ARCADE "KEY"
+#define LEADERBOARD_SPEED "KEY"
+#define LEADERBOARD_UNDEFINED "KEY"
+
+#define DISPLAY_TIME_SPLASH_SCENE 1
+#define TRANSITION_TIME 0.36
+
+#define SQUARE_SIZE 110.0
+#define SQUARE_EASE_RATE 2
+#define SQUARE_MOVE_DT 0.12
+#define SQUARE_START_DELAY 1.2
+#define SQUARE_UPDATE_DT 0.3
+
+#define MOVE_DOWN_TIME 0.035
+#define MOVE_DOWN_DX -13
+#define MOVE_MAX_SPEED ((SQUARE_SIZE / 2 + MOVE_DOWN_DX) / MOVE_DOWN_TIME)
+#define MOVE_INCREASE_SPEED 20
+#define MOVE_INCREASE_SPEED_RATE 2
+
+#define INCREASE_MOVE_SPEED(x) (MOVE_INCREASE_SPEED - (log(x / MOVE_INCREASE_SPEED + 1) * MOVE_INCREASE_SPEED_RATE))
+
+#define BORDER_SHOW_DT 0.16
+#define BORDER_WIDTH (SQUARE_SIZE / 2)
+#define BORDER_HEIGHT (SQUARE_SIZE / 2 * 3 - 5)
+
+#define NUMBER_OF_COLORS 5
+
+#define MIDDLE_FONT_SIZE 36
+
+#define MENU_MOVE_DT 0.36
+#define MENU_FONT_SIZE 54
+#define MENU_DELAY 0.4
+#define MENU_SHOW_DT 0.32
+
+#define ARCADE_TIME 60
+
+#define RED_R 255
+#define RED_G 82
+#define RED_B 82
+
+#define YELLOW_R 255
+#define YELLOW_G 213
+#define YELLOW_B 79
+
+#define GREEN_R 174
+#define GREEN_G 213
+#define GREEN_B 129
+
+#define BLUE_R 79
+#define BLUE_G 195
+#define BLUE_B 247
+
+#define PURLE_R 186
+#define PURLE_G 104
+#define PURLE_B 200
+
+#define BLACK 34
+#define WHITE 255
+#define GREY 97
+
+#define SWIPE 0.025
+
+#endif
